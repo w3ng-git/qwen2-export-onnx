@@ -2,7 +2,7 @@
 
 ## Overview
 
-OPEN_EXPORT_QW is a versatile tool designed to convert and run language models in the ONNX format. This project facilitates the exportation of models to ONNX, as well as the subsequent loading and inference using these models. The setup is user-friendly and adaptable to various model configurations.
+This is a versatile tool designed to convert and run language models in the ONNX format. This project facilitates the exportation of models to ONNX, as well as the subsequent loading and inference using these models. Additionally, it helps to efficiently convert Large Language Models (LLMs) like QWEN for deployment on edge computing platforms.
 
 ## System Requirements
 
@@ -13,10 +13,9 @@ OPEN_EXPORT_QW is a versatile tool designed to convert and run language models i
 ## Project Structure
 
 ```
-OPEN_EXPORT_QW
+qwen2-export-onnx
 |   chat_onnx.py
 |   export_onnx_qwen.py
-|   quantize_dynamic.py
 |
 +---output_onnx
 |
@@ -28,7 +27,6 @@ OPEN_EXPORT_QW
 
 - **`chat_onnx.py`**: Script for loading and running the ONNX model, using the configuration and tokenizer files from your model directory.
 - **`export_onnx_qwen.py`**: Script to convert your existing model into the ONNX format.
-- **`quantize_dynamic.py`**: Script for dynamic quantization of the ONNX model (if needed).
 - **`output_onnx`**: Directory where the exported ONNX models are saved.
 - **`[Your model dir]`**: Placeholder for your model directory containing the original model files, configuration, and tokenizer.
 
