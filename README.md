@@ -19,7 +19,7 @@ qwen2-export-onnx
 |
 +---output_onnx
 |
-\---[Your model dir]
+\---[Your huggingface model dir] ( local model from huggingface )
         [model, config and tokenizer files]
 ```
 
@@ -28,7 +28,7 @@ qwen2-export-onnx
 - **`chat_onnx.py`**: Script for loading and running the ONNX model, using the configuration and tokenizer files from your model directory.
 - **`export_onnx_qwen.py`**: Script to convert your existing model into the ONNX format.
 - **`output_onnx`**: Directory where the exported ONNX models are saved.
-- **`[Your model dir]`**: Placeholder for your model directory containing the original model files, configuration, and tokenizer.
+- **`[Your huggingface model dir]`**: Placeholder for your model directory containing the original model files, configuration, and tokenizer.
 
 ## Getting Started
 
@@ -37,7 +37,7 @@ qwen2-export-onnx
 To begin, convert your model to the ONNX format by running:
 
 ```bash
-python export_onnx_qwen.py [Your model dir]
+python export_onnx_qwen.py [Your huggingface model dir]
 ```
 
 - **`[Your model dir]`**: Replace this with the path to your model directory.
@@ -48,7 +48,7 @@ python export_onnx_qwen.py [Your model dir]
 After exporting the model, you can run it using:
 
 ```bash
-python chat_onnx.py [Your model dir]
+python chat_onnx.py [Your huggingface model dir]
 ```
 
 - **`chat_onnx.py`**: This script will automatically search for the `language-model.onnx` and `logits-model.onnx` files in the `output_onnx` directory.
