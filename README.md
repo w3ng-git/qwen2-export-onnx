@@ -56,5 +56,5 @@ python chat_onnx.py [Your huggingface model dir]
 ```
 
 - **`chat_onnx.py`**: This script will automatically search for the `language-model.onnx` and `logits-model.onnx` files in the `output_onnx` directory.
-- The command-line arguments will load the tokenizer and configuration files necessary for inference. This step is essential because different models have varying structures, such as the number of layers, KV cache head counts, and hidden sizes (e.g., the QWEN 2 0.5B model has 24 layers, while the 1.5B model has 28 layers). The configuration file ensures correct model execution during inference.
+- The command-line arguments will load the tokenizer and configuration files necessary for inference. This step is essential because different models have varying structures, such as the number of layers, KV head counts, and hidden sizes (e.g., the QWEN 2 0.5B model has 24 layers, while the 1.5B model has 28 layers). The configuration file ensures correct model execution during inference.
 
