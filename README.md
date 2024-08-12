@@ -39,6 +39,10 @@ To begin, convert your model to the ONNX format by running:
 ```bash
 python export_onnx_qwen.py [Your huggingface model dir]
 ```
+example:
+```bash
+export_onnx_qwen.py huggingface-qwen
+```
 
 - **`[Your model dir]`**: Replace this with the path to your model directory.
 - The converted ONNX models will be saved in the `output_onnx` directory as `language-model.onnx` and `logits-model.onnx`.
