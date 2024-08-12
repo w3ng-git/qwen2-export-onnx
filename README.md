@@ -1,4 +1,4 @@
-# OPEN_EXPORT_QW
+# qwen2-export-onnx
 
 ## Overview
 
